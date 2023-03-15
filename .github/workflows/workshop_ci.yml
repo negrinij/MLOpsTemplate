@@ -40,7 +40,7 @@ jobs:
       - name:  Create Pull Request to Main
         uses: thomaseizinger/create-pull-request@master
         with:
-          GITHUB_TOKEN: ${{ secrets.mlops1 }} #setup: provide your github secret name
+          GITHUB_TOKEN: ${{ secrets.AZURE_SERVICE_PRINCIPAL }} #setup: provide your github secret name
           head: ${{ github.ref }}
           base: main
           title: "An automatically created PR to main by successful CI"
